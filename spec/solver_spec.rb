@@ -16,13 +16,13 @@ describe Solver do
   context 'Fizzbuzz test' do
     fizzbuzz = Solver.new
     it 'should return fizz if N is divisible by 3' do
-      expect(fizzbuzz.fizzbuzz(6)).to be('fizz')
+      expect(fizzbuzz.fizzbuzz(6)).to eq('fizz')
     end
     it 'should return buzz if N is divisible by 5' do
-      expect(fizzbuzz.fizzbuzz(10)).to be('buzz')
+      expect(fizzbuzz.fizzbuzz(10)).to eq('buzz')
     end
     it 'should return fizzbuzz if N is divisible by 3 and 5' do
-      expect(fizzbuzz.fizzbuzz(15)).to be('fizzbuzz')
+      expect(fizzbuzz.fizzbuzz(15)).to eq('fizzbuzz')
     end
     it "should return 'N' if N is not divisible by 3 or 5" do
       expect(fizzbuzz.fizzbuzz(8)).to eq('8')
