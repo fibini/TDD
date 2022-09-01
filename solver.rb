@@ -1,8 +1,4 @@
-# frozen_string_literal: true
-
-# comment
 class Solver
-  # attr_reader :reverse, :fizzbuzz
   def factorial(num)
     if num.zero?
       1
